@@ -36,10 +36,15 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #1c2431; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -58,3 +63,21 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+
+.navigation {
+  position: relative;
+  width: 100%;
+  padding: 2rem 4rem; }
+  .navigation__logo {
+    position: absolute;
+    width: 10rem; }
+  .navigation__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 1rem; }
+  .navigation__link, .navigation__link:active, .navigation__link:link {
+    text-decoration: none;
+    color: white;
+    font-family: "Open Sans", sans-serif; }

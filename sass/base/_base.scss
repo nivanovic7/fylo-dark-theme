@@ -27,6 +27,12 @@ html {
 
 body {
   box-sizing: border-box;
+  background-color: $bg-primary;
+  //   background-image: url(../../images/bg-curvy-desktop.svg);
+  //   background-repeat: no-repeat;
+  //   height: 200vh;
+  //   background-size: 100%;
+  //   background-position: center;
 
   @include respond(tab-port) {
     padding: 0;
