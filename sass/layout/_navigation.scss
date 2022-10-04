@@ -6,6 +6,8 @@
   &__logo {
     position: absolute;
     width: 10rem;
+    top: 50%;
+    translate: 0 -50%;
   }
 
   &__list {

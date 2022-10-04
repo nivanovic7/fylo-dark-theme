@@ -42,9 +42,18 @@ body {
     body {
       padding: 0; } }
 
+main {
+  background-color: #181f2a; }
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: auto; }
+
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  color: white; }
 
 .u-center-text {
   text-align: center !important; }
@@ -64,13 +73,38 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.u-width-60 {
+  width: 75%;
+  max-width: 71rem;
+  margin: auto; }
+
+.u-width-90 {
+  width: 90%;
+  margin: auto; }
+
+.card {
+  width: 45%;
+  text-align: center;
+  padding: 2rem; }
+
+.header {
+  background-image: url(../../images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 100%;
+  padding: 0 3rem; }
+  .header .paragraph {
+    padding: 3rem; }
+
 .navigation {
   position: relative;
   width: 100%;
   padding: 2rem 4rem; }
   .navigation__logo {
     position: absolute;
-    width: 10rem; }
+    width: 10rem;
+    top: 50%;
+    translate: 0 -50%; }
   .navigation__list {
     display: flex;
     justify-content: flex-end;
@@ -81,3 +115,19 @@ body {
     text-decoration: none;
     color: white;
     font-family: "Open Sans", sans-serif; }
+
+.our-offers-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%; }
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%; }
+
+.testimonial-section {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
