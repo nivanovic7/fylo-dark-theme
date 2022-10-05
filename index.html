@@ -35,7 +35,7 @@
       </ul>
     </nav>
     <header class="header">
-      <div class="header-content u-width-60 u-center-text">
+      <div class="header-content u-width-70 u-center-text">
         <img
           src="./images/illustration-intro.png"
           alt="illustration intro"
@@ -53,7 +53,7 @@
       </div>
     </header>
     <main>
-      <section class="our-offers-section u-width-60">
+      <section class="our-offers-section u-width-70 u-margin-bottom-big">
         <div class="card">
           <img src="./images/icon-access-anywhere.svg" alt="icon" />
           <h3 class="heading-tertiary">Access your files, anywhere</h3>
@@ -89,28 +89,32 @@
         </div>
       </section>
 
-      <section class="about-section u-width-90">
+      <section class="about-section u-width-90 u-margin-bottom-big">
         <img
           src="./images/illustration-stay-productive.png"
           alt="illusration"
         />
         <div>
-          <h2 class="heading/secondary">Stay productive, wherever you are</h2>
-          <p class="paragraph">
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Stay productive, wherever you are
+          </h2>
+          <p class="paragraph u-margin-bottom-small">
             Never let location be an issue when accessing your files. Fylo has
             you covered for all of your file storage needs.
           </p>
-          <p class="paragraph">
+          <p class="paragraph u-margin-bottom-small">
             Securely share files and folders with friends, family and colleagues
             for live collaboration. No email attachments required.
           </p>
-          <a href="#" class="">See how fily works</a>
+          <a href="#" class="link">See how fily works</a>
         </div>
       </section>
 
-      <section class="testimonial-section u-width-90">
+      <section class="testimonial-section u-width-90 u-margin-bottom-small">
+        <img src="./images/bg-quotes.png" alt="quotes" class="quotes" />
+
         <div class="testimonial">
-          <p class="paragraph-testimonial">
+          <p class="paragraph u-margin-bottom-medium">
             Fylo has improved our team productivity by an order of magnitude.
             Since making the switch our team has become a well-oiled
             collaboration machine.
@@ -126,7 +130,7 @@
         </div>
 
         <div class="testimonial">
-          <p class="paragraph-testimonial">
+          <p class="paragraph u-margin-bottom-medium">
             Huddle Fylo has improved our team productivity by an order of
             magnitude. Since making the switch our team has become a well-oiled
             collaboration machine.
@@ -142,7 +146,7 @@
         </div>
 
         <div class="testimonial">
-          <p class="paragraph-testimonial">
+          <p class="paragraph u-margin-bottom-medium">
             Huddle Fylo has improved our team productivity by an order of
             magnitude. Since making the switch our team has become a well-oiled
             collaboration machine.
@@ -157,7 +161,8 @@
           </div>
         </div>
       </section>
-      <section class="early-access">
+
+      <section class="early-access-section u-width-70">
         <h2 class="heading-secondary u-margin-bottom-small">
           Get early access today
         </h2>
@@ -166,14 +171,26 @@
           extremely generous. If you have any questions, our support team would
           be happy to help you.
         </p>
-        <div class="form">
-          <input type="text" placeholder="email@exapmle.com" />
-          <a href="#" class="btn">Get Started For Free</a>
-        </div>
+        <form class="form">
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="email@exapmle.com"
+          />
+          <label for="email">Please enter correct email</label>
+          <button href="#" type="submit" class="btn">
+            Get Started For Free
+          </button>
+        </form>
       </section>
     </main>
     <footer class="footer">
-      <img class="footer__logo" src="./images/logo.svg" alt="logo" />
+      <img
+        class="footer__logo u-margin-bottom-medium"
+        src="./images/logo.svg"
+        alt="logo"
+      />
       <div class="footer__content">
         <div class="footer__about">
           <img src="./images/icon-location.svg" alt="location icon" />
@@ -183,7 +200,7 @@
           </p>
         </div>
         <div class="footer__contact">
-          <div>
+          <div class="u-margin-bottom-small">
             <img src="./images/icon-phone.svg" alt="phone icon" />
             <span>+1-543-123-4567</span>
           </div>

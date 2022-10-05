@@ -2,6 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10%;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .about-section {
@@ -9,14 +14,118 @@
   align-items: center;
   justify-content: center;
   gap: 5%;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .link {
+    padding: 1rem 0;
+    text-decoration: none;
+    color: rgba($white, 0.5);
+    border-bottom: 1px solid rgba($white, 0.5);
+
+    &:hover {
+      border-bottom: 1px solid rgba($white, 0.8);
+      color: rgba($white, 0.8);
+    }
+  }
 }
 
 .testimonial-section {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 3rem;
+  position: relative;
+  padding: 3rem 0;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
+  .testimonial {
+    background-color: $bg-testimonail;
+    padding: 3rem;
+    border-radius: 1rem;
+    z-index: 10;
+  }
 
   .user {
     display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    &__img {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+    }
+
+    .username::after {
+      content: "Founder & CEO, Huddle";
+      display: block;
+      font-size: 1.2rem;
+      opacity: 0.5;
+    }
+  }
+
+  .quotes {
+    position: absolute;
+    left: -1rem;
+    top: 0;
+
+    @include respond(tab-port) {
+      top: -1rem;
+    }
+  }
+}
+
+.early-access-section {
+  position: relative;
+  z-index: 10;
+  margin: auto;
+  border-radius: 1rem;
+  padding: 5rem;
+  text-align: center;
+  background-color: $bg-secondary;
+  box-shadow: 5px 2px 10px 5px rgba(gray, 0.1);
+
+  .form {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  input {
+    flex-grow: 1;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 3rem;
+    border: none;
+  }
+
+  label {
+    position: absolute;
+    left: 2rem;
+    top: 4.5rem;
+    font-size: 1.2rem;
+    color: $light-red;
+    display: none;
+
+    @include respond(tab-port) {
+      position: relative;
+      top: 0;
+      text-align: left;
+    }
+  }
+
+  input:invalid:not(:placeholder-shown) ~ label {
+    display: inline-block;
   }
 }

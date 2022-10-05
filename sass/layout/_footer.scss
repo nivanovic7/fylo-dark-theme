@@ -1,4 +1,6 @@
 .footer {
+  padding: 10rem 5%;
+
   &__logo {
     margin-right: auto;
   }
@@ -7,8 +9,17 @@
     display: flex;
     justify-content: space-between;
 
+    @include respond(tab-port) {
+      flex-direction: column;
+      gap: 5rem;
+    }
+
     & > * {
       max-width: 25%;
+
+      @include respond(tab-port) {
+        max-width: 100%;
+      }
     }
   }
 
@@ -26,16 +37,28 @@
   &__nav {
     list-style: none;
     columns: 2;
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__link {
     text-decoration: none;
     color: $white;
+    margin-bottom: 1rem;
+    display: inline-block;
   }
 
   &__social {
     display: flex;
     gap: 1rem;
+
+    @include respond(tab-port) {
+      align-self: center;
+    }
+
     a {
       text-decoration: none;
       color: $white;

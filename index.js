@@ -1,7 +1,13 @@
-const headerHeight = document.querySelector("header").clientHeight;
-const navHeight = document.querySelector("nav").clientHeight;
-const body = document.querySelector("body");
+const earlyAccessSectionHeight = document.querySelector(
+  ".early-access-section"
+).clientHeight;
 
-body.style.backgroundPosition = `center ${headerHeight + navHeight - 400}px`;
+console.log(earlyAccessSectionHeight);
 
-console.log(body.style.backgroundImage.clientHeight);
+document.querySelector(".early-access-section").style.top = `${
+  earlyAccessSectionHeight / 2
+}px`;
+
+document.querySelector(".footer").style.padding = `calc(${
+  earlyAccessSectionHeight / 2
+}px + 8rem) 5% 8rem `;

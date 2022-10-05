@@ -3,9 +3,10 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 50% 100%;
-  padding: 0 3rem;
+  padding: 0 3rem 10rem 3rem;
 
-  &__illustration {
+  img {
+    margin: auto;
   }
 
   .paragraph {

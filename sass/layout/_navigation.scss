@@ -1,7 +1,7 @@
 .navigation {
   position: relative;
   width: 100%;
-  padding: 2rem 4rem;
+  padding: 5%;
 
   &__logo {
     position: absolute;
@@ -22,7 +22,12 @@
   &__link:active,
   &__link:link {
     text-decoration: none;
-    color: $white;
+    color: rgba($white, 0.5);
     font-family: $font-primary;
+
+    &:hover {
+      color: $white;
+      text-decoration: underline;
+    }
   }
 }
