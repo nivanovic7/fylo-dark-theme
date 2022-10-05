@@ -1,0 +1,51 @@
+.footer {
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    & > * {
+      max-width: 25%;
+    }
+  }
+
+  &__about {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  &__contact div {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__nav {
+    list-style: none;
+    columns: 2;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $white;
+  }
+
+  &__social {
+    display: flex;
+    gap: 1rem;
+    a {
+      text-decoration: none;
+      color: $white;
+      border: 1px solid white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

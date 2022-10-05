@@ -47,8 +47,7 @@ main {
 
 img {
   max-width: 100%;
-  display: block;
-  margin: auto; }
+  display: block; }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -86,6 +85,46 @@ body {
   width: 45%;
   text-align: center;
   padding: 2rem; }
+
+.footer__logo {
+  margin-right: auto; }
+
+.footer__content {
+  display: flex;
+  justify-content: space-between; }
+  .footer__content > * {
+    max-width: 25%; }
+
+.footer__about {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem; }
+
+.footer__contact div {
+  display: flex;
+  gap: 2rem; }
+
+.footer__nav {
+  list-style: none;
+  columns: 2; }
+
+.footer__link {
+  text-decoration: none;
+  color: white; }
+
+.footer__social {
+  display: flex;
+  gap: 1rem; }
+  .footer__social a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 .header {
   background-image: url(../../images/bg-curvy-desktop.svg);
@@ -131,3 +170,5 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .testimonial-section .user {
+    display: flex; }
